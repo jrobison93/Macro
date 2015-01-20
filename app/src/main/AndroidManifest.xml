@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.john.macro" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".data.MacroProvider"
+            android:authorities="com.example.john.macro"
+            android:exported="false"
+            android:syncable="false" />
+
+        <receiver
+            android:name=".DailyUpdateReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".DailySummaryActivity"
+            android:label="@string/title_activity_daily_summary"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.john.macro.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddFoodActivity"
+            android:label="@string/title_activity_add_food"
+            android:parentActivityName=".DailySummaryActivity"
+            android:configChanges="orientation|screenSize|screenLayout">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.john.macro.DailySummaryActivity" />
+        </activity>
+
+        <service android:name=".AddFoodService" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+</manifest>

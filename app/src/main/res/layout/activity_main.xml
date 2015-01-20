@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="?android:attr/dividerVertical"
+    android:showDividers="middle"
+    android:dividerPadding="5dp"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <com.example.john.macro.MacroGraphView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@color/steelBlue"
+        android:id="@+id/macro_graph_container"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:id="@+id/day_list_container"
+        android:name="com.example.john.macro.DayListFragment"
+        tools:layout="@android:layout/list_content"/>
+
+
+</LinearLayout>

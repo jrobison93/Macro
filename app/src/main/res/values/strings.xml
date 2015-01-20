@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="app_name">Macro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Fat format CHAR LIMIT=25] -->
+    <string name="format_fat">Fat: <xliff:g id="fat">%1.0f</xliff:g>g</string>
+
+    <!-- Protein format CHAR LIMIT=25] -->
+    <string name="format_protein">Protein: <xliff:g id="protein">%1.0f</xliff:g>g</string>
+
+    <!-- Carb format CHAR LIMIT=25] -->
+    <string name="format_carb">Carb: <xliff:g id="carb">%1.0f</xliff:g>g</string>
+
+    <!-- Calorie format CHAR LIMIT=25] -->
+    <string name="format_calories"><xliff:g id="calories">%1.0f</xliff:g> Calories</string>
+    <string name="title_activity_daily_summary">Daily Summary</string>
+    <string name="title_activity_add_food">Add Food</string>
+
+</resources>

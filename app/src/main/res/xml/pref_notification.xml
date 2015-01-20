@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <CheckBoxPreference
+        android:key="@string/notification_key"
+        android:title="@string/pref_title_new_message_notifications"
+        android:defaultValue="false" />
+
+
+</PreferenceScreen>

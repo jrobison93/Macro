@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/list_item_food_textview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:divider="?android:listDivider"
+        android:showDividers="middle"
+        android:dividerPadding="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="bottom"
+            android:id="@+id/list_item_food_calorie"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="bottom"
+            android:paddingLeft="8dp"
+            android:id="@+id/list_item_food_fat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="bottom"
+            android:paddingLeft="8dp"
+            android:id="@+id/list_item_food_protein"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="bottom"
+            android:paddingLeft="8dp"
+            android:id="@+id/list_item_food_carb"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
